@@ -2,7 +2,6 @@ body {
   background-color: #2a2a2a;
   font-family: "Rubik", sans-serif;
   padding: 0;
-  height: 100vh;
   margin: 0;
 }
 
@@ -19,6 +18,7 @@ main {
 }
 
 section {
+  padding-top: 20vh;
   color: #fff;
   display: flex;
   height: inherit;
