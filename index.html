@@ -6,18 +6,21 @@
   <title>23rd Monthsary</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabarito">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+  <link rel="stylesheet" href="slick.css"/>
   <script src="jquery.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+  <script src="slick.min.js"></script>
 </head>
 <body>
-  <main>
+  <section class="intro">
+    <p>Happy Monthsary, my love!</p>
+  </section>
+  <main class="main-letter">
     <div class="carousel">
       <div class="carousel-item">
         <img src="asset/pic (1).jpeg" />
       </div>
       <div class="carousel-item">
-        <img src="asset/pic (2).jpeg" />
+        <img src="asset/pic (2).JPEG" />
       </div>
       <div class="carousel-item">
         <img src="asset/pic (3).jpeg" />
@@ -67,6 +70,16 @@
       Chef Bok 🌻
     </div>
   </main>
+  <script>
+    $(document).ready(function(){
+      setTimeout(function () {
+        $('.intro').fadeOut(1000);
+        $('.intro').css({'display':'none'});
+        $('.main-letter').fadeIn(1750);
+        $('.main-letter').css({'display':'flex'});
+      }, 3000)
+    })
+  </script>
   <script>
     $(document).ready(function(){
       $('.carousel').slick({
